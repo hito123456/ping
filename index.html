@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ping:
+    <input type="number" id="ping">
+
+    <button id="button">
+        ボタン
+    </button>
+
+    <button id="reset">
+        リセット
+    </button>
+
+    
+
+    <script>
+        document.getElementById("button").onmousedown = function(){
+            setTimeout(function(){
+                document.body.style.backgroundColor = "blue";
+            },document.getElementById("ping").value);
+        };
+        document.getElementById("reset").onmousedown = function(){
+            document.body.style.backgroundColor = "white";
+        };
+    </script>
+</body>
+</html>
